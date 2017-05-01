@@ -7,8 +7,9 @@ application](https://github.com/sensorlab030/sensorbridge-client) which then
 either records the data to files or serves it over a websocket to interested
 applications.
 
-The firmware (/firmware) of the sensor board is Arduino based and the board 
-layout files (/hardware) are created with CadSoft/Autodesk Eagle
+The firmware (/firmware) of the sensor board is [Arduino]
+(https://www.arduino.cc/) based and the board layout files (/hardware) are 
+created with [CadSoft/Autodesk Eagle](http://www.autodesk.com/products/eagle/overview)
 
 ## Protocol
 
@@ -17,11 +18,14 @@ bps.
 
 The serial protocol in which the data is communicated is very straighforward: 
 it will always send six two-byte (16 bit) values (ordered from sensor one to 
-sensor six), separated by a carriage return (0x0D) and a line feed (0x0A). 
-So one single message will always be 14 bytes long and  be ordered like this:
+sensor six), separated by a carriage return (```0x0D```) and a line feed 
+(```0x0A```). So one single message will always be 14 bytes long and  be ordered 
+like this:
 
-Sensor 1 value, Sensor 2 value, Sensor 3 value, Sensor 4 value, 
-Sensor 5 value, Sensor 5 value, Carriage return, Line feed
+```
+Sensor 1 value | Sensor 2 value | Sensor 3 value | Sensor 4 value |
+Sensor 5 value | Sensor 5 value | Carriage return | Line feed
+```
 
 The sensor readings will have a value from 0 to 1023 (10 bit), and will be 
 sent with the high byte first. If it is detected that there is no sensor 
