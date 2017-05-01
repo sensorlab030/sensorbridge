@@ -17,31 +17,35 @@ bps.
 
 The serial protocol in which the data is communicated is very straighforward: 
 it will always send six two-byte (16 bit) values (ordered from sensor one to 
-sensor six), separated by a carriage return and a line feed (0x0D 0x0A). So one 
-single message will always be 14 bytes long and  be ordered like this:
+sensor six), separated by a carriage return (0x0D) and a line feed (0x0A). 
+So one single message will always be 14 bytes long and  be ordered like this:
 
 Sensor 1 value, Sensor 2 value, Sensor 3 value, Sensor 4 value, 
 Sensor 5 value, Sensor 5 value, Carriage return, Line feed
 
 The sensor readings will have a value from 0 to 1023 (10 bit), and will be 
 sent with the high byte first. If it is detected that there is no sensor 
-connected to the analog input, a value of FF:FF will be sent to notify the 
+connected to the analog input, a value of ```FF:FF``` will be sent to notify the 
 disconnected state of the sensor.
 
 
 ### Example 1: One sensor connected, analog value of 0
 
 This is the message that is sent when only the first sensor is connected that
-has a sensor reading of 0 (0x00 0x00).
+has a sensor reading of 0 (```00:00```).
 
+```
 00:00:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:0D:0A
+```
 
 ### Example 2: One sensor connected, analog value of 1023
 
 This is the message that is sent when only the first sensor is connected that
-has a sensor reading of 1023 (0x03 0xFF).
+has a sensor reading of 1023 (```03:FF```).
 
+```
 03:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:FF:0D:0A
+```
 
 
 ## License
