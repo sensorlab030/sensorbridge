@@ -7,9 +7,9 @@ application](https://github.com/sensorlab030/sensorbridge-client) which then
 either records the data to files or serves it over a websocket to interested
 applications.
 
-The firmware (/firmware) of the sensor board is [Arduino]
-(https://www.arduino.cc/) based and the board layout files (/hardware) are 
-created with [CadSoft/Autodesk Eagle](http://www.autodesk.com/products/eagle/overview)
+The firmware (/firmware) of the sensor board is [Arduino](https://www.arduino.cc/) 
+based and the board layout files (/hardware) are created with 
+[CadSoft/Autodesk Eagle](http://www.autodesk.com/products/eagle/overview)
 
 ## Protocol
 
