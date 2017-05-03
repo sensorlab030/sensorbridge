@@ -4950,8 +4950,8 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="INPUT6" library="sensorlab" deviceset="MJ-2135" device=""/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
 <part name="U$14" library="microbuilder" deviceset="GND" device=""/>
-<part name="ANALOG" library="SparkFun-Connectors" deviceset="M06" device="NO_SILK_FEMALE_PTH"/>
-<part name="JP2" library="SparkFun-Connectors" deviceset="M08" device="NO_SILK_FEMALE_PTH"/>
+<part name="ANALOG" library="SparkFun-Connectors" deviceset="M06" device="SILK_FEMALE_PTH"/>
+<part name="JP2" library="SparkFun-Connectors" deviceset="M08" device=""/>
 <part name="ON" library="adafruit" deviceset="LED" device="CHIP-LED0603"/>
 <part name="R8" library="Seeed-OPL-Resistor" deviceset="RES" device="-0603"/>
 <part name="U$15" library="microbuilder" deviceset="GND" device=""/>
