@@ -7,7 +7,7 @@
 // so on.
 //                       Sensor id: 1, 2, 3, 4, 5, 6
 uint8_t sensorDataPins[]        = { 5, 4, 3, 2, 0, 1 }; // Analog input pin the sensor is connected to
-uint8_t sensorConnectionPins[]  = { 4, 5, 3, 2, 1, 0 }; // Digital input pin the sensor is connected to
+uint8_t sensorConnectionPins[]  = { 4, 5, 6, 7, 3, 2 }; // Digital input pin the sensor is connected to
 
 void setup() {
 
