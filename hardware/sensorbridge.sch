@@ -4544,9 +4544,13 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="ANALOG" library="SparkFun-Connectors" deviceset="M06" device="NO_SILK_FEMALE_PTH"/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M08" device="NO_SILK_FEMALE_PTH"/>
 <part name="PWR" library="SparkFun-Connectors" deviceset="M05" device="NO_SILK"/>
-<part name="STATUS" library="adafruit" deviceset="LED" device="CHIP-LED0603"/>
+<part name="DATA" library="adafruit" deviceset="LED" device="CHIP-LED0603"/>
 <part name="R7" library="Seeed-OPL-Resistor" deviceset="RES" device="-0603"/>
 <part name="U$2" library="microbuilder" deviceset="GND" device=""/>
+<part name="POWER" library="adafruit" deviceset="LED" device="CHIP-LED0603"/>
+<part name="R8" library="Seeed-OPL-Resistor" deviceset="RES" device="-0603"/>
+<part name="U$15" library="microbuilder" deviceset="GND" device=""/>
+<part name="P+8" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4594,9 +4598,13 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="ANALOG" gate="G$1" x="121.92" y="78.74" rot="MR0"/>
 <instance part="JP2" gate="G$1" x="-10.16" y="60.96" rot="MR180"/>
 <instance part="PWR" gate="G$1" x="127" y="45.72" rot="MR0"/>
-<instance part="STATUS" gate="G$1" x="45.72" y="35.56"/>
+<instance part="DATA" gate="G$1" x="45.72" y="35.56"/>
 <instance part="R7" gate="R" x="45.72" y="25.4" rot="R90"/>
 <instance part="U$2" gate="G$1" x="45.72" y="15.24"/>
+<instance part="POWER" gate="G$1" x="58.42" y="35.56"/>
+<instance part="R8" gate="R" x="58.42" y="25.4" rot="R90"/>
+<instance part="U$15" gate="G$1" x="58.42" y="15.24"/>
+<instance part="P+8" gate="1" x="58.42" y="45.72"/>
 </instances>
 <busses>
 </busses>
@@ -4685,6 +4693,11 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="R7" gate="R" pin="1"/>
 <wire x1="45.72" y1="17.78" x2="45.72" y2="21.59" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$15" gate="G$1" pin="GND"/>
+<pinref part="R8" gate="R" pin="1"/>
+<wire x1="58.42" y1="21.59" x2="58.42" y2="17.78" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -4736,6 +4749,11 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="101.6" y1="45.72" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
 <label x="109.22" y="45.72" size="1.778" layer="95"/>
 <pinref part="PWR" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<pinref part="P+8" gate="1" pin="+5V"/>
+<pinref part="POWER" gate="G$1" pin="A"/>
+<wire x1="58.42" y1="43.18" x2="58.42" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S1_CONN" class="0">
@@ -4958,7 +4976,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <net name="N$7" class="0">
 <segment>
 <pinref part="R7" gate="R" pin="2"/>
-<pinref part="STATUS" gate="G$1" pin="C"/>
+<pinref part="DATA" gate="G$1" pin="C"/>
 <wire x1="45.72" y1="29.21" x2="45.72" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -4966,8 +4984,15 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="JP2" gate="G$1" pin="7"/>
 <wire x1="-5.08" y1="53.34" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="STATUS" gate="G$1" pin="A"/>
+<pinref part="DATA" gate="G$1" pin="A"/>
 <wire x1="45.72" y1="53.34" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="POWER" gate="G$1" pin="C"/>
+<wire x1="58.42" y1="30.48" x2="58.42" y2="29.21" width="0.1524" layer="91"/>
+<pinref part="R8" gate="R" pin="2"/>
 </segment>
 </net>
 </nets>
