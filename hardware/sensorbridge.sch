@@ -5393,6 +5393,27 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="106,1,-5.08,66.04,N$12,,,,,"/>
+<approved hash="106,1,-5.08,68.58,N$13,,,,,"/>
+<approved hash="113,1,33.3417,-19.05,LED1,,,,,"/>
+<approved hash="113,1,32.4781,-30.48,R1,,,,,"/>
+<approved hash="113,1,89.2217,-19.05,LED2,,,,,"/>
+<approved hash="113,1,88.3581,-30.48,R2,,,,,"/>
+<approved hash="113,1,145.102,-19.05,LED3,,,,,"/>
+<approved hash="113,1,144.238,-30.48,R3,,,,,"/>
+<approved hash="113,1,200.982,-19.05,LED4,,,,,"/>
+<approved hash="113,1,200.118,-30.48,R4,,,,,"/>
+<approved hash="113,1,256.862,-19.05,LED5,,,,,"/>
+<approved hash="113,1,255.998,-30.48,R5,,,,,"/>
+<approved hash="113,1,310.202,-19.05,LED6,,,,,"/>
+<approved hash="113,1,309.338,-30.48,R6,,,,,"/>
+<approved hash="113,1,120.057,81.4747,ANALOG,,,,,"/>
+<approved hash="113,1,-8.29733,58.2253,JP2,,,,,"/>
+<approved hash="113,1,58.7417,34.29,ON,,,,,"/>
+<approved hash="113,1,57.8781,25.4,R8,,,,,"/>
+<approved hash="113,1,122.597,49.5977,PWR,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
