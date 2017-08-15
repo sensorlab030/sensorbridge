@@ -4983,32 +4983,38 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </classes>
 <parts>
 <part name="LED1" library="adafruit" deviceset="LED" device="CHIP-LED0603"/>
-<part name="R1" library="Seeed-OPL-Resistor" deviceset="RES" device="-0603"/>
+<part name="R1" library="Seeed-OPL-Resistor" deviceset="RES" device="-0603" value="470"/>
 <part name="U$1" library="microbuilder" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="U$3" library="microbuilder" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
 <part name="U$14" library="microbuilder" deviceset="GND" device=""/>
-<part name="ANALOG" library="SparkFun-Connectors" deviceset="CONN_06" device="NO_SILK_FEMALE_PTH"/>
-<part name="JP2" library="SparkFun-Connectors" deviceset="CONN_08" device="NO_SILK_FEMALE_PTH"/>
+<part name="ARDUINO_ANALOG" library="SparkFun-Connectors" deviceset="CONN_06" device="NO_SILK_FEMALE_PTH"/>
+<part name="ARDUINO_DIGITAL" library="SparkFun-Connectors" deviceset="CONN_08" device="NO_SILK_FEMALE_PTH"/>
 <part name="ON" library="adafruit" deviceset="LED" device="CHIP-LED0603"/>
-<part name="R8" library="Seeed-OPL-Resistor" deviceset="RES" device="-0603"/>
+<part name="R8" library="Seeed-OPL-Resistor" deviceset="RES" device="-0603" value="470"/>
 <part name="U$15" library="microbuilder" deviceset="GND" device=""/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
-<part name="PWR" library="SparkFun-Connectors" deviceset="CONN_03" device="1X03_NO_SILK"/>
+<part name="ARDUINO_SUPPLY" library="SparkFun-Connectors" deviceset="CONN_03" device="1X03_NO_SILK"/>
 <part name="INPUT_1" library="S5B-PH-K-S_LF__SN_" deviceset="S5B-PH-K-S(LF)(SN)" device=""/>
 <part name="LED2" library="adafruit" deviceset="LED" device="CHIP-LED0603"/>
-<part name="R2" library="Seeed-OPL-Resistor" deviceset="RES" device="-0603"/>
+<part name="R2" library="Seeed-OPL-Resistor" deviceset="RES" device="-0603" value="470"/>
 <part name="U$2" library="microbuilder" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="U$4" library="microbuilder" deviceset="GND" device=""/>
 <part name="INPUT_2" library="S5B-PH-K-S_LF__SN_" deviceset="S5B-PH-K-S(LF)(SN)" device=""/>
 <part name="LED3" library="adafruit" deviceset="LED" device="CHIP-LED0603"/>
-<part name="R3" library="Seeed-OPL-Resistor" deviceset="RES" device="-0603"/>
+<part name="R3" library="Seeed-OPL-Resistor" deviceset="RES" device="-0603" value="470"/>
 <part name="U$5" library="microbuilder" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="U$6" library="microbuilder" deviceset="GND" device=""/>
 <part name="INPUT_3" library="S5B-PH-K-S_LF__SN_" deviceset="S5B-PH-K-S(LF)(SN)" device=""/>
+<part name="R4" library="Seeed-OPL-Resistor" deviceset="RES" device="-0603" value="10K"/>
+<part name="U$7" library="microbuilder" deviceset="GND" device=""/>
+<part name="R5" library="Seeed-OPL-Resistor" deviceset="RES" device="-0603" value="10K"/>
+<part name="U$8" library="microbuilder" deviceset="GND" device=""/>
+<part name="R6" library="Seeed-OPL-Resistor" deviceset="RES" device="-0603" value="10K"/>
+<part name="U$9" library="microbuilder" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5027,6 +5033,21 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <text x="-2.54" y="55.88" size="1.778" layer="97">D5</text>
 <text x="-2.54" y="53.34" size="1.778" layer="97">D6</text>
 <text x="-2.54" y="50.8" size="1.778" layer="97">D7</text>
+<wire x1="2.54" y1="-12.7" x2="-5.08" y2="-12.7" width="0.1524" layer="97"/>
+<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="-17.78" width="0.1524" layer="97"/>
+<wire x1="-5.08" y1="-17.78" x2="2.54" y2="-17.78" width="0.1524" layer="97"/>
+<text x="-7.62" y="-15.24" size="0.6096" layer="97" align="top-right">Connected by
+wire to ground</text>
+<wire x1="53.34" y1="-12.7" x2="45.72" y2="-12.7" width="0.1524" layer="97"/>
+<wire x1="45.72" y1="-12.7" x2="45.72" y2="-17.78" width="0.1524" layer="97"/>
+<wire x1="45.72" y1="-17.78" x2="53.34" y2="-17.78" width="0.1524" layer="97"/>
+<text x="43.18" y="-15.24" size="0.6096" layer="97" align="top-right">Connected by
+wire to ground</text>
+<wire x1="106.68" y1="-12.7" x2="99.06" y2="-12.7" width="0.1524" layer="97"/>
+<wire x1="99.06" y1="-12.7" x2="99.06" y2="-17.78" width="0.1524" layer="97"/>
+<wire x1="99.06" y1="-17.78" x2="106.68" y2="-17.78" width="0.1524" layer="97"/>
+<text x="96.52" y="-15.24" size="0.6096" layer="97" align="top-right">Connected by
+wire to ground</text>
 </plain>
 <instances>
 <instance part="LED1" gate="G$1" x="12.7" y="-38.1" rot="R270"/>
@@ -5036,13 +5057,13 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <instance part="U$3" gate="G$1" x="17.78" y="-25.4"/>
 <instance part="P+7" gate="1" x="101.6" y="55.88"/>
 <instance part="U$14" gate="G$1" x="104.14" y="30.48"/>
-<instance part="ANALOG" gate="G$1" x="121.92" y="78.74" rot="MR0"/>
-<instance part="JP2" gate="G$1" x="-10.16" y="60.96" rot="MR180"/>
+<instance part="ARDUINO_ANALOG" gate="G$1" x="121.92" y="78.74" rot="MR0"/>
+<instance part="ARDUINO_DIGITAL" gate="G$1" x="-10.16" y="60.96" rot="MR180"/>
 <instance part="ON" gate="G$1" x="58.42" y="35.56"/>
 <instance part="R8" gate="R" x="58.42" y="25.4" rot="R90"/>
 <instance part="U$15" gate="G$1" x="58.42" y="15.24"/>
 <instance part="P+8" gate="1" x="58.42" y="45.72"/>
-<instance part="PWR" gate="J$1" x="127" y="48.26" rot="MR0"/>
+<instance part="ARDUINO_SUPPLY" gate="J$1" x="127" y="48.26" rot="MR0"/>
 <instance part="INPUT_1" gate="G$1" x="5.08" y="-12.7" rot="R180"/>
 <instance part="LED2" gate="G$1" x="63.5" y="-38.1" rot="R270"/>
 <instance part="R2" gate="R" x="55.88" y="-43.18" rot="R90"/>
@@ -5056,6 +5077,12 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <instance part="P+3" gate="1" x="121.92" y="-2.54"/>
 <instance part="U$6" gate="G$1" x="121.92" y="-25.4"/>
 <instance part="INPUT_3" gate="G$1" x="109.22" y="-12.7" rot="R180"/>
+<instance part="R4" gate="R" x="25.4" y="-20.32" rot="R90"/>
+<instance part="U$7" gate="G$1" x="25.4" y="-27.94"/>
+<instance part="R5" gate="R" x="76.2" y="-20.32" rot="R90"/>
+<instance part="U$8" gate="G$1" x="76.2" y="-27.94"/>
+<instance part="R6" gate="R" x="129.54" y="-20.32" rot="R90"/>
+<instance part="U$9" gate="G$1" x="129.54" y="-27.94"/>
 </instances>
 <busses>
 </busses>
@@ -5071,6 +5098,10 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <pinref part="INPUT_1" gate="G$1" pin="1"/>
 <wire x1="10.16" y1="-17.78" x2="17.78" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="-17.78" x2="17.78" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="INPUT_1" gate="G$1" pin="4"/>
+<wire x1="10.16" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-10.16" x2="17.78" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="17.78" y="-17.78"/>
 </segment>
 <segment>
 <pinref part="U$14" gate="G$1" pin="GND"/>
@@ -5079,9 +5110,9 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <label x="109.22" y="48.26" size="1.778" layer="95"/>
 <wire x1="114.3" y1="48.26" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
 <junction x="114.3" y="48.26"/>
-<pinref part="PWR" gate="J$1" pin="2"/>
+<pinref part="ARDUINO_SUPPLY" gate="J$1" pin="2"/>
 <wire x1="114.3" y1="48.26" x2="119.38" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="PWR" gate="J$1" pin="3"/>
+<pinref part="ARDUINO_SUPPLY" gate="J$1" pin="3"/>
 <wire x1="114.3" y1="50.8" x2="119.38" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -5099,6 +5130,10 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <pinref part="INPUT_2" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="-17.78" x2="68.58" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="-17.78" x2="68.58" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="INPUT_2" gate="G$1" pin="4"/>
+<wire x1="60.96" y1="-10.16" x2="68.58" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="-10.16" x2="68.58" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="68.58" y="-17.78"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="GND"/>
@@ -5110,6 +5145,25 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <pinref part="INPUT_3" gate="G$1" pin="1"/>
 <wire x1="114.3" y1="-17.78" x2="121.92" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="-17.78" x2="121.92" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="INPUT_3" gate="G$1" pin="4"/>
+<wire x1="114.3" y1="-10.16" x2="121.92" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="-10.16" x2="121.92" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="121.92" y="-17.78"/>
+</segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="GND"/>
+<pinref part="R4" gate="R" pin="1"/>
+<wire x1="25.4" y1="-25.4" x2="25.4" y2="-24.13" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$8" gate="G$1" pin="GND"/>
+<pinref part="R5" gate="R" pin="1"/>
+<wire x1="76.2" y1="-25.4" x2="76.2" y2="-24.13" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$9" gate="G$1" pin="GND"/>
+<pinref part="R6" gate="R" pin="1"/>
+<wire x1="129.54" y1="-25.4" x2="129.54" y2="-24.13" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -5126,16 +5180,12 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <wire x1="17.78" y1="-7.62" x2="17.78" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="INPUT_1" gate="G$1" pin="5"/>
 <wire x1="10.16" y1="-7.62" x2="17.78" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="INPUT_1" gate="G$1" pin="4"/>
-<wire x1="10.16" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="-10.16" x2="17.78" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="17.78" y="-7.62"/>
 </segment>
 <segment>
 <pinref part="P+7" gate="1" pin="+5V"/>
 <wire x1="101.6" y1="45.72" x2="101.6" y2="53.34" width="0.1524" layer="91"/>
 <label x="109.22" y="45.72" size="1.778" layer="95"/>
-<pinref part="PWR" gate="J$1" pin="1"/>
+<pinref part="ARDUINO_SUPPLY" gate="J$1" pin="1"/>
 <wire x1="101.6" y1="45.72" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -5148,20 +5198,12 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <wire x1="68.58" y1="-7.62" x2="68.58" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="INPUT_2" gate="G$1" pin="5"/>
 <wire x1="60.96" y1="-7.62" x2="68.58" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="INPUT_2" gate="G$1" pin="4"/>
-<wire x1="60.96" y1="-10.16" x2="68.58" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="-10.16" x2="68.58" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="68.58" y="-7.62"/>
 </segment>
 <segment>
 <pinref part="P+3" gate="1" pin="+5V"/>
 <wire x1="121.92" y1="-7.62" x2="121.92" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="INPUT_3" gate="G$1" pin="5"/>
 <wire x1="114.3" y1="-7.62" x2="121.92" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="INPUT_3" gate="G$1" pin="4"/>
-<wire x1="114.3" y1="-10.16" x2="121.92" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="-10.16" x2="121.92" y2="-7.62" width="0.1524" layer="91"/>
-<junction x="121.92" y="-7.62"/>
 </segment>
 </net>
 <net name="S1_CONN" class="0">
@@ -5171,7 +5213,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <label x="20.32" y="-12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="3"/>
+<pinref part="ARDUINO_DIGITAL" gate="G$1" pin="3"/>
 <wire x1="-5.08" y1="63.5" x2="15.24" y2="63.5" width="0.1524" layer="91"/>
 <label x="5.08" y="63.5" size="1.778" layer="95"/>
 </segment>
@@ -5179,13 +5221,17 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <net name="S1_DATA" class="0">
 <segment>
 <label x="88.9" y="86.36" size="1.778" layer="95"/>
-<pinref part="ANALOG" gate="G$1" pin="6"/>
+<pinref part="ARDUINO_ANALOG" gate="G$1" pin="6"/>
 <wire x1="88.9" y1="86.36" x2="116.84" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="INPUT_1" gate="G$1" pin="2"/>
-<wire x1="10.16" y1="-15.24" x2="30.48" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="-15.24" x2="25.4" y2="-15.24" width="0.1524" layer="91"/>
 <label x="20.32" y="-15.24" size="1.778" layer="95"/>
+<pinref part="R4" gate="R" pin="2"/>
+<wire x1="25.4" y1="-15.24" x2="30.48" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-16.51" x2="25.4" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="25.4" y="-15.24"/>
 </segment>
 </net>
 <net name="S2_CONN" class="0">
@@ -5195,7 +5241,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <label x="71.12" y="-12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="4"/>
+<pinref part="ARDUINO_DIGITAL" gate="G$1" pin="4"/>
 <wire x1="-5.08" y1="60.96" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
 <label x="5.08" y="60.96" size="1.778" layer="95"/>
 </segment>
@@ -5203,13 +5249,17 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <net name="S2_DATA" class="0">
 <segment>
 <label x="88.9" y="83.82" size="1.778" layer="95"/>
-<pinref part="ANALOG" gate="G$1" pin="5"/>
+<pinref part="ARDUINO_ANALOG" gate="G$1" pin="5"/>
 <wire x1="88.9" y1="83.82" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="INPUT_2" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="-15.24" x2="81.28" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-15.24" x2="76.2" y2="-15.24" width="0.1524" layer="91"/>
 <label x="71.12" y="-15.24" size="1.778" layer="95"/>
+<pinref part="R5" gate="R" pin="2"/>
+<wire x1="76.2" y1="-15.24" x2="81.28" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="-16.51" x2="76.2" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="76.2" y="-15.24"/>
 </segment>
 </net>
 <net name="S3_CONN" class="0">
@@ -5219,7 +5269,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <label x="124.46" y="-12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="5"/>
+<pinref part="ARDUINO_DIGITAL" gate="G$1" pin="5"/>
 <wire x1="-5.08" y1="58.42" x2="15.24" y2="58.42" width="0.1524" layer="91"/>
 <label x="5.08" y="58.42" size="1.778" layer="95"/>
 </segment>
@@ -5227,13 +5277,17 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <net name="S3_DATA" class="0">
 <segment>
 <label x="88.9" y="81.28" size="1.778" layer="95"/>
-<pinref part="ANALOG" gate="G$1" pin="4"/>
+<pinref part="ARDUINO_ANALOG" gate="G$1" pin="4"/>
 <wire x1="88.9" y1="81.28" x2="116.84" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="INPUT_3" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="-15.24" x2="134.62" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="-15.24" x2="129.54" y2="-15.24" width="0.1524" layer="91"/>
 <label x="124.46" y="-15.24" size="1.778" layer="95"/>
+<pinref part="R6" gate="R" pin="2"/>
+<wire x1="129.54" y1="-15.24" x2="134.62" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-16.51" x2="129.54" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="129.54" y="-15.24"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -5245,13 +5299,13 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="2"/>
+<pinref part="ARDUINO_DIGITAL" gate="G$1" pin="2"/>
 <wire x1="-5.08" y1="66.04" x2="5.08" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="ARDUINO_DIGITAL" gate="G$1" pin="1"/>
 <wire x1="-5.08" y1="68.58" x2="5.08" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5262,7 +5316,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <label x="17.78" y="-38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="6"/>
+<pinref part="ARDUINO_DIGITAL" gate="G$1" pin="6"/>
 <wire x1="-5.08" y1="55.88" x2="15.24" y2="55.88" width="0.1524" layer="91"/>
 <label x="5.08" y="55.88" size="1.778" layer="95"/>
 </segment>
@@ -5290,7 +5344,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <label x="68.58" y="-38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="7"/>
+<pinref part="ARDUINO_DIGITAL" gate="G$1" pin="7"/>
 <wire x1="-5.08" y1="53.34" x2="15.24" y2="53.34" width="0.1524" layer="91"/>
 <label x="5.08" y="53.34" size="1.778" layer="95"/>
 </segment>
@@ -5302,7 +5356,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <label x="121.92" y="-38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="8"/>
+<pinref part="ARDUINO_DIGITAL" gate="G$1" pin="8"/>
 <wire x1="-5.08" y1="50.8" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
 <label x="5.08" y="50.8" size="1.778" layer="95"/>
 </segment>
@@ -5313,10 +5367,20 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <errors>
 <approved hash="106,1,-5.08,66.04,N$12,,,,,"/>
 <approved hash="106,1,-5.08,68.58,N$13,,,,,"/>
+<approved hash="113,1,11.43,-38.4217,LED1,,,,,"/>
+<approved hash="113,1,120.057,81.3477,ANALOG,,,,,"/>
+<approved hash="113,1,-8.29733,58.3523,JP2,,,,,"/>
 <approved hash="113,1,58.7417,34.29,ON,,,,,"/>
-<approved hash="113,1,57.8781,25.4,R8,,,,,"/>
 <approved hash="113,1,122.597,49.5977,PWR,,,,,"/>
+<approved hash="113,1,62.23,-38.4217,LED2,,,,,"/>
+<approved hash="113,1,115.57,-38.4217,LED3,,,,,"/>
 </errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

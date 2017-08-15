@@ -1,0 +1,19 @@
+Part               Description                            Value              Octopart link
+ARDUINO_ANALOG     1x6 0.1 inch male header               NA                 https://octopart.com/22-28-4090-molex-278177
+ARDUINO_DIGITAL    1x8 0.1 inch male header               NA                 https://octopart.com/22-28-4090-molex-278177
+ARDUINO_SUPPLY     1x3 0.1 inch male header               NA                 https://octopart.com/22-28-4090-molex-278177
+INPUT_1            JST 5 position 2mm Pitch connector     NA                 https://octopart.com/s5b-ph-k-s%28lf%29%28sn%29-jst-248886
+INPUT_2            JST 5 position 2mm Pitch connector     NA                 https://octopart.com/s5b-ph-k-s%28lf%29%28sn%29-jst-248886
+INPUT_3            JST 5 position 2mm Pitch connector     NA                 https://octopart.com/s5b-ph-k-s%28lf%29%28sn%29-jst-248886
+LED1               0603 LED (green)                       NA                 https://octopart.com/sml-d12m8wt86-rohm-8992277
+LED2               0603 LED (green)                       NA                 https://octopart.com/sml-d12m8wt86-rohm-8992277
+LED3               0603 LED (green)                       NA                 https://octopart.com/sml-d12m8wt86-rohm-8992277
+PWR_LED            0603 LED (green)                       NA                 https://octopart.com/sml-d12m8wt86-rohm-8992277
+R1                 0603 resistor                          470                https://octopart.com/cr0603-fx-4700elf-bourns-3825414
+R2                 0603 resistor                          470                https://octopart.com/cr0603-fx-4700elf-bourns-3825414
+R3                 0603 resistor                          470                https://octopart.com/cr0603-fx-4700elf-bourns-3825414
+R4                 0603 resistor                          10K                https://octopart.com/cr0603-fx-1002elf-bourns-2326648
+R5                 0603 resistor                          10K                https://octopart.com/cr0603-fx-1002elf-bourns-2326648
+R6                 0603 resistor                          10K                https://octopart.com/cr0603-fx-1002elf-bourns-2326648
+R8                 0603 resistor                          470                https://octopart.com/cr0603-fx-4700elf-bourns-3825414
+
