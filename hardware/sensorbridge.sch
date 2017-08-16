@@ -5368,10 +5368,10 @@ wire to ground</text>
 <approved hash="106,1,-5.08,66.04,N$12,,,,,"/>
 <approved hash="106,1,-5.08,68.58,N$13,,,,,"/>
 <approved hash="113,1,11.43,-38.4217,LED1,,,,,"/>
-<approved hash="113,1,120.057,81.3477,ANALOG,,,,,"/>
-<approved hash="113,1,-8.29733,58.3523,JP2,,,,,"/>
+<approved hash="113,1,115.813,81.3477,ARDUINO_ANALOG,,,,,"/>
+<approved hash="113,1,-3.77988,58.3523,ARDUINO_DIGITAL,,,,,"/>
 <approved hash="113,1,58.7417,34.29,ON,,,,,"/>
-<approved hash="113,1,122.597,49.5977,PWR,,,,,"/>
+<approved hash="113,1,118.353,49.5977,ARDUINO_SUPPLY,,,,,"/>
 <approved hash="113,1,62.23,-38.4217,LED2,,,,,"/>
 <approved hash="113,1,115.57,-38.4217,LED3,,,,,"/>
 </errors>
